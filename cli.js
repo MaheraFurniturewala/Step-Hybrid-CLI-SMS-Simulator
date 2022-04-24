@@ -21,6 +21,12 @@ program
         getCourseWork();
     });
 
+program
+    .command('getSchedule')
+    .description('getAll the Lecture, CorseWork Schedule for the day')
+    .alias('sch')
+    .action("The schedule for the today is - ");
+
 
 program.parse(process.argv);
 
