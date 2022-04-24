@@ -9,8 +9,7 @@ const getCourseWork = function () {
         .then(function (response) {
             courses = response.data.msg;
             courses.forEach(function (course) {
-
-                console.log(course.title);
+                console.log("Title: \t\t\t" + course.title + "\nDescription :" + "\t\t" + course.description + "\t\t" + "\n" + "Created At: " + "\t\t" + course.creationTime + "\n");
             })
         })
 }
