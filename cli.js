@@ -2,7 +2,6 @@ const program = require('commander');
 const axios = require('axios');
 program.version('0.0.1');
 
-//Commands
 
 const getCourseWork = function () {
     axios.get('http://localhost:8000/getCourseWork')
